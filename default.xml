@@ -7,8 +7,14 @@
   <default revision="refs/tags/android-4.2.1_r1"
            remote="aosp"
            sync-j="4" />
+  <remote  name="cf"
+           fetch="https://github.com/konstantinkeller/" />
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod/" />
+  <remote  name="aokp"
+           fetch="https://github.com/AOKP/" />
 
-  <project path="build" name="platform/build" >
+  <project path="build" name="android_build" remote="cf" revision="jb4.2.1"  >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -342,4 +348,12 @@
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
 
+  <project path="vendor/lge/mako" name="vendor_lge_mako" remote="cf" revision="master" />
+  <project path="vendor/pcf" name="vendor_pcf" remote="cf" revision="jb4.2.1" />
+  <project path="vendor/tmobile/apps/ThemeChooser" name="vendor_tmobile_apps_ThemeChooser" remote="cf" revision="jellybean" />
+  <project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="cm" revision="cm-10.1" />
+  <project path="vendor/tmobile/providers/ThemeManager" name="android_vendor_tmobile_providers_ThemeManager" remote="cm" revision="cm-10.1" />
+  <project path="vendor/tmobile/products/themes" name="android_vendor_tmobile_products_themes" remote="cm" revision="cm-10.1" />
+
+  <project path="platform_manifest" name="platform_manifest" remote="cf" revision="jb4.2.1" />
 </manifest>

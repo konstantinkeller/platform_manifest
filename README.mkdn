@@ -1,0 +1,26 @@
+Konstantin Keller
+=================
+
+Download the Source
+-------------------
+To get started with Android/Project Cold Fusion, you'll have to get familiar with [Git and Repo] (http://source.android.com/download/using-repo).
+
+To initialize your local repository using the Project Cold Fusion trees, use the following command:
+
+    repo init -u git://github.com/konstantinkeller/platform_manifest.git -b jb4.2.1
+
+Then to sync up (This will take a while, so you might as well go get some coffee!):
+
+    repo sync
+
+Setup the Build Environment
+---------------------------
+
+Now, setup the build environment (Run this from your working directory root).
+
+    . build/envsetup.sh
+
+Finally, start the build for your device.
+
+    brunch <device eg. mako>
+

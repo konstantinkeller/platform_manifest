@@ -2,17 +2,22 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="cf"
+           fetch="https://github.com/konstantinkeller/" />
+
+  <remote  name="aokp"
+           fetch="https://github.com/AOKP/" />
+
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod/"
+           review="review.cyanogenmod.com" />
+
   <default revision="refs/tags/android-4.2.1_r1"
            remote="aosp"
            sync-j="4" />
-  <remote  name="cf"
-           fetch="https://github.com/konstantinkeller/" />
-  <remote  name="cm"
-           fetch="https://github.com/CyanogenMod/" />
-  <remote  name="aokp"
-           fetch="https://github.com/AOKP/" />
 
   <project path="build" name="android_build" remote="cf" revision="jb4.2.1"  >
     <copyfile src="core/root.mk" dest="Makefile" />

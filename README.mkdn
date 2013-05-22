@@ -7,7 +7,7 @@ To get started with Android/Project Cold Fusion, you'll have to get familiar wit
 
 To initialize your local repository using the Project Cold Fusion trees, use the following command:
 
-    repo init -u git://github.com/konstantinkeller/platform_manifest.git -b jb4.2.1
+    repo init -u git://github.com/konstantinkeller/platform_manifest.git -b jb4.2.2
 
 Then to sync up (This will take a while, so you might as well go get some coffee!):
 

@@ -4,6 +4,9 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
+  
+  <remote  name="KK"
+           fetch="https://www.github.com/konstantinkeller" />
 
   <remote  name="github"
            fetch=".."
@@ -463,6 +466,8 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4_r1" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4_r1" />
+  <project path="device/lge/hammerhead" name="device/lge/hammerhead" remote="aosp" revision="refs/tags/android-4.4_r1" />
+  <project path="vendor/lge/hammerhead" name="vendor_lge_hammerhead" remote="KK" revision="jb-devel-mr2-release" />
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
